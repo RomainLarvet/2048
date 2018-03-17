@@ -30,7 +30,7 @@ function Ai() {
 
 		max = 0;
 		dir = 0;
-		for (int i = 0; i < 4; i++) {
+		for (i = 0; i < 4; i++) {
 			grid2 = grid.copy().move(i);		
 			score = eval(grid2);
 			if (score > max) {
@@ -44,8 +44,8 @@ function Ai() {
     
     this.eval = function(grid) {
         e = 0;
-    	for (int i = 0; i < 4; i++) {
-    		for (int j = 0; j < 4; j++) {
+    	for (i = 0; i < 4; i++) {
+    		for (j = 0; j < 4; j++) {
     			if (grid[i][j] == null) {
 	    			e++;
     			}
